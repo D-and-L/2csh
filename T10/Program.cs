@@ -8,11 +8,7 @@
 
 
 Console.WriteLine("Введите трехзначное число.");
-    while(true)
-    {
-        string input = Console.ReadLine();
-        if(!input.Equals("."))
-            Console.WriteLine("{0}->{1}",input, input[1]);
-        else
-            break;
-    }
+int num = Convert.ToInt32(Console.ReadLine());
+int secth = num % 100;
+int second = secth / 10;
+Console.WriteLine($"{second}");
